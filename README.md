@@ -4,3 +4,12 @@
 由于只是小玩具，所以扩展性与美观度极差，欢迎各位站友修改扩充。
 ## 食用方法
 直接下载然后用浏览器打开。
+## 函数说明
+``` generate_fortunate_number() ```
+生成一个介于0~1000之间（包含两端）的随机幸运数字并加上程序内置的对此数字的描述文字然后输出到页面上。\
+\
+``` generate_fortunate_number_10() ```
+执行```generate_fortunate_number()```10遍。\
+\
+``` generate_fortunate_number_100() ```
+执行```generate_fortunate_number_10()```10遍。
