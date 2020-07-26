@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Some Interesting Things</title>
-        <meta charset="utf-8">
-        <style>
-            body{
-                display:flex;
-            }
-            .centre{
-                margin: auto;
-                padding: 70px 0;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="centre">
-            <!--
+
+<head>
+	<title>Some Interesting Things</title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			display: flex;
+		}
+
+		.centre {
+			margin: auto;
+			padding: 70px 0;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="centre">
+		<!--
             <table>
                 <td></td>
                 <td></td>
             </table>
             -->
-            <button onclick="generate_fortunate_number()">生成幸运数字</button>
+		<h1>抽卡模拟器</h1>
+		<button onclick="generate_fortunate_number()">抽1张幸运牌</button>
             <button onclick="generate_fortunate_number_10()">试试10连抽</button>
             <!--<button onclick="generate_fortunate_number_100()">试试100连抽</button>-->
             <div id="fortunate_number_discription">
@@ -39,17 +43,17 @@
                 c+=1;
                 var f_number = Math.floor((Math.random()*1000)+1);
                 var a = "";
-                if(f_number<50){a="幸运值有点低哦，坐和放宽。";}
-                else if(f_number>=50 && f_number<100){a="宜：和人一起爬山。";}
-                else if(f_number>=100 && f_number<200){a="宜：在群里说“啊这”。";}
-                else if(f_number>=200 && f_number<300){a="宜：抽10连";}
-                else if(f_number>=300 && f_number<500){a="宜：给群主发红包";}
-                else if(f_number>=500 && f_number<700){a="宜：看看群并拍拍群主。";}
-                else if(f_number>=700 && f_number<900){a="宜：上网课";}
-                else if(f_number>=900 && f_number<950){a="宜：做暑假作业";jc+=1;}
-                else if(f_number>=950 && f_number<995){a="怎么刚好卡在运气普通和很好的区间呢？~";jc+=5;}
-                else if(f_number>=995 && f_number<1000){a="运气已经达到了人类无法触及的高度……也许这就是大佬吧，吸吸吸。";jc+=10;}
-                else{a="(｡·ˇ‸ˇ·｡)哼！都怪你 (`ȏ´) 运气这么好也不哄哄人家(〃′o`)人家超想哭的，捶你胸口，大坏蛋！！！(￣^￣)ゞ咩QAQ捶你胸口你好讨厌！(=ﾟωﾟ)ﾉ要抱抱嘤嘤嘤哼，人家拿小拳拳捶你胸口！！！(｡· ^·̀｡)大坏蛋，打死你(つд⊂)";jc+=25;}
+                if(f_number<50){a="F。幸运值有点低哦，坐和放宽。";}
+                else if(f_number>=50 && f_number<100){a="C-。宜：和人一起爬山。";}
+                else if(f_number>=100 && f_number<200){a="C。宜：在群里说“啊这”。";}
+                else if(f_number>=200 && f_number<300){a="C+。宜：抽10连";}
+                else if(f_number>=300 && f_number<500){a="B。宜：给群主发红包";}
+                else if(f_number>=500 && f_number<700){a="B+。宜：看看群并拍拍群主。";}
+                else if(f_number>=700 && f_number<900){a="A-。宜：上网课";}
+                else if(f_number>=900 && f_number<950){a="A。宜：做暑假作业";jc+=1;}
+                else if(f_number>=950 && f_number<995){a="S！怎么刚好卡在运气普通和很好的区间呢？~";jc+=5;}
+                else if(f_number>=995 && f_number<1000){a="SS！！运气已经达到了人类无法触及的高度……也许这就是大佬吧，吸吸吸。";jc+=10;}
+                else{a="SSS！！！(｡·ˇ‸ˇ·｡)哼！都怪你 (`ȏ´) 运气这么好也不哄哄人家(〃′o`)人家超想哭的，捶你胸口，大坏蛋！！！(￣^￣)ゞ咩QAQ捶你胸口你好讨厌！(=ﾟωﾟ)ﾉ要抱抱嘤嘤嘤哼，人家拿小拳拳捶你胸口！！！(｡· ^·̀｡)大坏蛋，打死你(つд⊂)";jc+=25;}
 
                 //console.log("今天的幸运数字是："+f_number+"！"+a);
                 $("#fortunate_number_discription").append("<p>这次的幸运数字是："+f_number+"！"+a+"</p>");
