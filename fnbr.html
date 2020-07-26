@@ -37,30 +37,7 @@
         </div>
         <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript">
-            var fortunatelevellist=[
-                {
-                    "id":0;
-                    "name":"default";
-                    "text":["F。幸运值有点低哦，坐和放宽。",
-                    "C-。宜：和人一起爬山。",
-                    "C。宜：在群里说“啊这”。",
-                    "C+。宜：抽10连",
-                    "B。宜：给群主发红包",
-                    "B+。宜：看看群并拍拍群主。",
-                    "A-。宜：上网课",
-                    "A。宜：做暑假作业",
-                    "S！怎么刚好卡在运气普通和很好的区间呢？~",
-                    "SS！！运气已经达到了人类无法触及的高度……也许这就是大佬吧，吸吸吸。",
-                    "SSS！！！(｡·ˇ‸ˇ·｡)哼！都怪你 (`ȏ´) 运气这么好也不哄哄人家(〃′o`)人家超想哭的，捶你胸口，大坏蛋！！！(￣^￣)ゞ咩QAQ捶你胸口你好讨厌！(=ﾟωﾟ)ﾉ要抱抱嘤嘤嘤哼，人家拿小拳拳捶你胸口！！！(｡· ^·̀｡)大坏蛋，打死你(つд⊂)"
-                    ]
-                },
-                {
-                    "id":1;
-                    "name":"not-named";
-                    "text":[0,0,0,0,0,0,0,0]
-                }
-            ]
-            var fll=fortunatelevellist;
+          
             var jc=0;
             var c=0;
             var generate_fortunate_number = function(){
@@ -68,7 +45,7 @@
                 var f_number = Math.floor((Math.random()*1000)+1);
                 var a = "";
                 if(f_number<50){a=;}
-                else if(f_number>=50 && f_number<100){a=fll[0].text[0];}
+                else if(f_number>=50 && f_number<100){a="F。幸运值有点低哦，坐和放宽。";}
                 else if(f_number>=100 && f_number<200){a="C。宜：在群里说“啊这”。";}
                 else if(f_number>=200 && f_number<300){a="C+。宜：抽10连";}
                 else if(f_number>=300 && f_number<500){a="B。宜：给群主发红包";}
